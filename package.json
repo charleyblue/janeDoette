@@ -1,0 +1,26 @@
+{
+  "name": "janedoette",
+  "version": "1.0.0",
+  "description": "FEND Portfolio Project",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "why"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charleyblue/janeDoette.git"
+  },
+  "keywords": [
+    "jane",
+    "doette"
+  ],
+  "author": "charleyblue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charleyblue/janeDoette/issues"
+  },
+  "homepage": "https://github.com/charleyblue/janeDoette#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

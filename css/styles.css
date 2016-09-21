@@ -8,7 +8,7 @@ body {
   display: -webkit-flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1024px;
 }
 header {
   border-bottom: 1px solid #8096AB;
@@ -46,19 +46,37 @@ header {
 }
 
 .hero {
-  background-color: #8096ab;
-  background-image: linear-gradient(rgba(125,151,173,0.5), rgba(180,218,249,0.5) );
+  background: rgb(125,151,173);
+  background-image: url('http://imgh.us/grid.svg');
+  background-image: url('http://imgh.us/grid.svg'), linear-gradient(rgba(125,151,173,0.8), rgba(180,218,249,0.8), rgba(95,112,127,0.5));
   /*rgba(95,112,127,0.5),*/
   border: 1px solid #7d97ad;
   border-radius: .5em;
+  display: -webkit-flex;
   display: flex;
-  min-height: 5em;
+  -webkit-flex-flow: column wrap; /* Safari */
+  flex-flow: column wrap;
+  min-height: 8em;
+  -webkit-justify-content: center; /* Safari */
   justify-content: center;
   margin: .5em auto .25em auto;
   width: 80%;
 }
+.hero h4 {
+  font-size: 1.25em;
+}
 @media screen and (max-width:375px) {
-  .hero {
-    background-image: repeating-radial-gradient(rgba(125,151,173,0.5), rgba(125,151,173,1), rgba(180,218,249,0.5) );
+  .hero h4 {
+    font-size: 1.06em;
   }
+}
+.row {
+  -webkit-align-self: center;
+  align-self: center;
+}
+.featured {
+  /*display: flex;
+  flex-flow: row wrap;*/
+  margin: 0 auto;
+  width: 80%;
 }
