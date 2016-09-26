@@ -1,6 +1,6 @@
-* {
+/** {
   outline: 1px solid gray;
-}
+}*/
 html, figure, div {
   margin: 0;
 }
@@ -90,10 +90,18 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-.subdue h3 {
+.subdue {
   color: rgba(135,152,165, 0.75);
+  font-size: inherit;
   font-weight: 300;
+}
+.subdue h3 {
   font-size: 2em;
+}
+.meta {
+  align-self: unset;
+  margin-right: 0.33em;
+  text-align: right;
 }
 figcaption {
   color: rgba(135,152,165, 1);
@@ -109,6 +117,14 @@ figcaption {
   }
   .hero h4, .featured h3 {
     font-size: 1.06em;
+  }
+}
+@media screen and (max-width:615px) {
+  .image {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width:1199px) {
