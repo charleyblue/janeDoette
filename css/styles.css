@@ -1,4 +1,4 @@
-* {
+/** {*/
   outline: 1px solid gray;
 }
 
@@ -51,7 +51,7 @@ body {
   font-size: 3em;
 }
 
-#logo {
+.logo-inner {
   align-self: baseline;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .image-cluster {
-  align-content: space-between;
+  align-content: flex-start;
 }
 .image {
   color: rgba(135,152,165, 1);
