@@ -1,9 +1,13 @@
-/** {
+* {
   outline: 1px solid gray;
-}*/
-html, figure, div {
+}
+
+html,
+figure,
+div {
   margin: 0;
 }
+
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -11,23 +15,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .container {
   display: flex;
   display: -webkit-flex;
-  flex-flow: column nowrap;;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
   margin: 0 auto;
   max-width: 80vw;
 }
+
 .box {
   display: flex;
   display: -webkit-flex;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   justify-content: space-between;
-  -webkit-justify-content: space-betweengit add;
+  -webkit-justify-content: space-between;
   margin: 0 auto;
   width: 100%;
 }
+
 .box1 {
   border-bottom: 1px solid #8096AB;
   display: inline-flex;
@@ -37,29 +45,35 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+
 .logo {
   color: #2d3c49;
   font-size: 3em;
 }
+
 #logo {
   align-self: baseline;
 }
+
 .headline {
   align-self: flex-end;
   color: #2d3c49;
   line-height: .8em;
 }
-.headline h1 {
+
+.headline-h1 {
   align-self: flex-end;
   font-size: 2.5em;
   font-weight: 100;
 }
-.headline h3 {
+
+.headline-h3 {
   align-self: flex-end;
   font-size: 1.25em;
   font-weight: 300;
   text-align: right;
 }
+
 .hero {
   background: rgb(125,151,173);
   background-image: linear-gradient(rgba(250,250,250,1), rgba(245,245,245,0.8), rgba(250,250,250,1));
@@ -75,7 +89,8 @@ body {
   margin: .5em auto .25em auto;
   width: 100%;
 }
-.hero h4 {
+
+.hero-h4 {
   color: rgb(114,129,139);
   font-size: 1.25em;
 }
@@ -84,29 +99,50 @@ body {
   -webkit-align-self: center;
   align-self: center;
 }
+
 .featured {
-  display: block;
+  display: flex;
+  display: -webkit-flex;
   margin: 0 auto;
   width: 100%;
 }
+
 .subdue {
   color: rgba(135,152,165, 0.75);
   font-size: inherit;
   font-weight: 300;
 }
-.subdue h3 {
+
+.subdue-h3 {
   font-size: 2em;
 }
+
 .meta {
   align-self: unset;
   margin-right: 0.33em;
   text-align: center;
   transform: rotate(4deg);
 }
-figcaption {
+
+.image-cluster {
+  align-content: space-between;
+}
+.image {
   color: rgba(135,152,165, 1);
+  /*display: flex;*/
+  /*flex-flow: column wrap;*/
+  /*align-content: space-between;*/
+}
+
+.caption-h3 {
   font-size: 1.5em;
 }
+
+.caption-anchor {
+  text-decoration: none;
+  font-size: 1.125em;
+}
+
 @media screen and (max-width:370px) {
   .headline h1 {
     font-size: 1.5em;
@@ -122,7 +158,9 @@ figcaption {
 @media screen and (max-width:615px) {
   .image {
     align-items: center;
+    -webkit-align-items: center;
     display: flex;
+    display: -webkit-flex;
     flex-flow: column wrap;
     justify-content: center;
   }
